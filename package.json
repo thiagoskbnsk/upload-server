@@ -7,7 +7,10 @@
   "scripts": {
     "dev": "tsx watch --env-file .env src/infra/http/server.ts",
     "test": "dotenv -e .env.test -- vitest run",
-    "test:watch": "dotenv -e .env.test -- vitest"
+    "test:watch": "dotenv -e .env.test -- vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
     "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.10.6",
     "dotenv-cli": "^8.0.0",
+    "drizzle-kit": "^0.30.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "vite-tsconfig-paths": "^5.1.4",
@@ -27,8 +31,10 @@
     "@fastify/multipart": "^9.0.2",
     "@fastify/swagger": "^9.4.1",
     "@fastify/swagger-ui": "^5.2.1",
+    "drizzle-orm": "^0.38.4",
     "fastify": "^5.2.1",
     "fastify-type-provider-zod": "^4.0.2",
+    "postgres": "^3.4.5",
     "zod": "^3.24.1"
   }
 }
