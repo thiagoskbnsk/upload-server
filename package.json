@@ -21,6 +21,7 @@
   "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@faker-js/faker": "^9.4.0",
     "@types/node": "^22.10.6",
     "dotenv-cli": "^8.0.0",
     "drizzle-kit": "^0.30.2",
@@ -36,6 +37,7 @@
     "@fastify/multipart": "^9.0.2",
     "@fastify/swagger": "^9.4.1",
     "@fastify/swagger-ui": "^5.2.1",
+    "dayjs": "^1.11.13",
     "drizzle-orm": "^0.38.4",
     "fastify": "^5.2.1",
     "fastify-type-provider-zod": "^4.0.2",
