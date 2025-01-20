@@ -1,9 +1,9 @@
 import { Readable } from "node:stream";
 import { db } from "@/infra/db";
 import { schema } from "@/infra/db/schemas";
+import { makeLeft, makeRight } from "@/infra/shared/either";
+import type { Either } from "@/infra/shared/either";
 import { uploadFileToStorage } from "@/infra/storage/upload-file-to-storage";
-import { makeLeft, makeRight } from "@/shared/either";
-import type { Either } from "@/shared/either";
 import { z } from "zod";
 import { InvalidaFileFormat } from "./errors/invalid-file-format";
 
