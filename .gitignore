@@ -13,7 +13,7 @@ dist/
 build/
 
 # Environment variables
-.env*
+.env
 
 # IDEs and editors
 .idea/
